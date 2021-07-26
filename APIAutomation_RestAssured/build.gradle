@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    compile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.3'
+
+}
+
+sourceSets.main.java.srcDirs = ['src']
+
+ext {
+    javaMainClass = "com.webservice.tests.EndToEndTest"
+}
+task runAPITests(type: JavaExec) {
+    group = "Execution"
+    description = "Run the main class ResultsFileProcessor with JavaExecTask"
+    classpath = sourceSets.main.runtimeClasspath
+    main = javaMainClass
+}

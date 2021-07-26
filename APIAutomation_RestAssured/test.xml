@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GetRepos" verbose="1" thread-count="1">
+    <test name="GetRepos" preserve-order="true">
+        <classes>
+            <class name="com.webservice.tests.EndToEndTest"/>
+        </classes>
+    </test>
+</suite>
