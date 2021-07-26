@@ -1,0 +1,6 @@
+com/webservice/helper/WebServiceHelper.java
+ com.webservice.helper.WebServiceHelper
+com/webservice/tests/EndToEndTest.java
+ com.webservice.tests.EndToEndTest
+com/webservice/utils/PropertyReader.java
+ com.webservice.utils.PropertyReader
